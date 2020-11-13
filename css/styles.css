@@ -21,6 +21,80 @@ body {
     background-image: url(../img/paven.png);
 }
 
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #285616;
+}
+
+a:visited {
+    color: #529125;
+}
+
+.red {
+    color: #9b2422 !important;
+}
+
+.blue {
+    color: #0c73f2 !important;
+}
+
+/* FORMULARIOS */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    border: 1px solid #c9c9c9;
+    box-shadow: 0 0 2px #cccccc inset;
+    background: #f5f5f5;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #808080;
+    transition: 300ms;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border: 1px solid #70b231;
+    color: #000000;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #008000;
+    width: 70px;
+    padding: 3px;
+    color: #f5f5f5;
+    background-color: #70b231;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="button"]:hover ,
+input[type="submit"]:hover ,
+input[type="reset"]:hover ,
+button:hover {
+    box-shadow: 0 0 2px #808080;
+}
+
+input[type="button"]:active ,
+input[type="submit"]:active ,
+input[type="reset"]:active ,
+button:active {
+    box-shadow: 0 0 3px #808080 inset;
+    text-shadow: 0 0 1px #cccccc;
+}
+
 /* CABECERA */
 #header {
     min-width: 1200px;
@@ -136,4 +210,92 @@ body {
 
 #nav > ul > li:hover > ul > li:hover {
     box-shadow: 0 0 6px #cccccc inset;
+}
+
+/* CONTENIDO */
+#content {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+}
+
+/* BARRA LATERAL */
+#aside,
+#frase {
+    clear: both;
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 2px #cccccc;
+    font-family: sans-serif, Helvetica, Arial;
+}
+
+#frase {
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif, Helvetica, Arial;
+}
+
+#aside .widget {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child {
+    margin-bottom: 20px;
+}
+
+#aside h3 {
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #f2f3f2;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+}
+
+#aside li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+/* FORMULARIOS BARRA LATERAL */
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="password"],
+#aside div input[type="email"],
+#aside div a {
+    display: block;
+    width: 99%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#aside input,
+#aside label {
+    margin: 0 auto;
+    text-align: center;
 }
