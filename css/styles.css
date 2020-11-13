@@ -41,7 +41,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 0 2px 1px #333333;
-    transition: text-shadow 300ms;
+    transition: 300ms;
 }
 
 #header h1:hover {
@@ -87,7 +87,7 @@ body {
     line-height: 40px;
     float: left;
     border-right: 1px solid #808080;
-    transition: background-color 300ms;
+    transition: 300ms;
 }
 
 #nav > ul > li a {
@@ -106,4 +106,34 @@ body {
 #nav > ul > li:hover {
     background-color: #70b231;
     box-shadow: 0 0 4px #008000 inset;
+}
+
+/* MENÚ DESPLEGABLE */
+#nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0 2px 2px #808080;
+    z-index: 1;
+}
+
+#nav > ul > li:hover > ul {
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li {
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: 300ms;
+}
+
+#nav > ul > li:hover > ul > li a {
+    color: #666666;
+}
+
+#nav > ul > li:hover > ul > li:hover {
+    box-shadow: 0 0 6px #cccccc inset;
 }
