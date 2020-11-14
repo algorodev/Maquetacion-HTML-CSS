@@ -10,6 +10,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "Fjalla";
+    src: url(fonts/FjallaOne-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ESTILOS GENERALES */
 * {
@@ -40,6 +46,10 @@ a:visited {
 
 .blue {
     color: #0c73f2 !important;
+}
+
+.orange {
+    color: #d69d2a !important;
 }
 
 /* FORMULARIOS */
@@ -222,7 +232,6 @@ button:active {
 /* BARRA LATERAL */
 #aside,
 #frase {
-    clear: both;
     width: 200px;
     float: left;
     margin: 30px;
@@ -298,4 +307,57 @@ button:active {
 #aside label {
     margin: 0 auto;
     text-align: center;
+}
+
+/* SECCIONES */
+#sections {
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Helvetica, Arial;
+    margin-right: 20px;
+}
+
+#sections .titulo {
+    font-family: "Fjalla";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#sections section {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .date {
+    color: #808080;
+    font-size: 14px;
+}
+
+#sections .sticker-left,
+#sections .sticker-right {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .sticker-right {
+    margin-left: 860px;
 }
